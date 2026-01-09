@@ -1,4 +1,4 @@
-import { Controller, Post } from '@nestjs/common';
+import { Controller, Post, Param } from '@nestjs/common';
 import { ScrapingService } from './scraping.service';
 
 @Controller('scraping')
@@ -8,5 +8,10 @@ export class ScrapingController {
   @Post('categories')
   async scrapeCategories() {
     return this.scrapingService.scrapeCategories();
+  }
+
+  @Post('products/:slug')
+  async scrapeProducts(@Param('slug') slug: string) {
+    return this.scrapingService.scrapeProducts(slug);
   }
 }

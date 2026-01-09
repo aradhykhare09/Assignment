@@ -40,6 +40,9 @@ export class Product {
 
     @Prop()
     lastScrapedAt: Date;
+
+    @Prop({ index: true })
+    categorySlug: string;
 }
 
 export const ProductSchema = SchemaFactory.createForClass(Product);

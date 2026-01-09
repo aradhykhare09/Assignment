@@ -30,6 +30,10 @@ export class CategoriesService {
     return this.categoryModel.findById(id).exec();
   }
 
+  async findBySlug(slug: string): Promise<Category | null> {
+    return this.categoryModel.findOne({ slug }).exec();
+  }
+
   async update(id: string, updateCategoryDto: UpdateCategoryDto): Promise<Category | null> {
     return this.categoryModel.findByIdAndUpdate(id, updateCategoryDto, { new: true }).exec();
   }
