@@ -5,6 +5,7 @@ import { ConfigModule } from '@nestjs/config';
 import { MongooseModule } from '@nestjs/mongoose';
 import { ProductsModule } from './products/products.module';
 import { CategoriesModule } from './categories/categories.module';
+import { ScrapingModule } from './scraping/scraping.module';
 
 @Module({
   imports: [
@@ -12,6 +13,7 @@ import { CategoriesModule } from './categories/categories.module';
     MongooseModule.forRoot(process.env.MONGO_URI || 'mongodb://localhost:27017/product-explorer'),
     ProductsModule,
     CategoriesModule,
+    ScrapingModule,
   ],
   controllers: [AppController],
   providers: [AppService],
