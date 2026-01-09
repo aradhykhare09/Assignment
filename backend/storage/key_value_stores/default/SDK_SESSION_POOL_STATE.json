@@ -1,0 +1,122 @@
+{
+  "usableSessionsCount": 2,
+  "retiredSessionsCount": 0,
+  "sessions": [
+    {
+      "id": "session_9rqrapCLaO",
+      "cookieJar": {
+        "version": "tough-cookie@6.0.0",
+        "storeType": "MemoryCookieStore",
+        "rejectPublicSuffixes": true,
+        "enableLooseMode": false,
+        "allowSpecialUseDomain": true,
+        "prefixSecurity": "silent",
+        "cookies": []
+      },
+      "userData": {},
+      "maxErrorScore": 3,
+      "errorScoreDecrement": 0.5,
+      "expiresAt": "2026-01-09T06:50:04.573Z",
+      "createdAt": "2026-01-09T06:00:04.573Z",
+      "usageCount": 0,
+      "maxUsageCount": 50,
+      "errorScore": 0
+    },
+    {
+      "id": "session_teh9t15X34",
+      "cookieJar": {
+        "version": "tough-cookie@6.0.0",
+        "storeType": "MemoryCookieStore",
+        "rejectPublicSuffixes": true,
+        "enableLooseMode": false,
+        "allowSpecialUseDomain": true,
+        "prefixSecurity": "silent",
+        "cookies": [
+          {
+            "key": "localization",
+            "value": "IN",
+            "expires": "2027-01-09T06:00:09.342Z",
+            "domain": "www.worldofbooks.com",
+            "path": "/en-gb",
+            "hostOnly": true,
+            "creation": "2026-01-09T06:00:13.261Z",
+            "lastAccessed": "2026-01-09T06:00:13.261Z"
+          },
+          {
+            "key": "cart_currency",
+            "value": "USD",
+            "expires": "2026-01-23T06:00:12.163Z",
+            "domain": "www.worldofbooks.com",
+            "path": "/",
+            "hostOnly": true,
+            "creation": "2026-01-09T06:00:13.262Z",
+            "lastAccessed": "2026-01-09T06:00:13.262Z"
+          },
+          {
+            "key": "swym-session-id",
+            "value": "\"a2u6dnplzyfxn4avrvlc2ko4lk3k06jolxeh2kax52bonmq079bckgkqriaouz37\"",
+            "expires": "2026-01-09T06:30:12.000Z",
+            "domain": "www.worldofbooks.com",
+            "path": "/",
+            "secure": true,
+            "hostOnly": false,
+            "creation": "2026-01-09T06:00:13.263Z",
+            "lastAccessed": "2026-01-09T06:00:13.263Z"
+          },
+          {
+            "key": "swym-pid",
+            "value": "\"rTqgRVolwLgMEf6yEmnpwLNUailSACsmlQlC0eL5Bfw=\"",
+            "expires": "2027-01-09T06:00:12.000Z",
+            "domain": "www.worldofbooks.com",
+            "path": "/",
+            "secure": true,
+            "hostOnly": false,
+            "creation": "2026-01-09T06:00:13.263Z",
+            "lastAccessed": "2026-01-09T06:00:13.263Z"
+          },
+          {
+            "key": "__eventn_id",
+            "value": "7vz93h4e8f.1767938409",
+            "expires": "2027-02-13T06:00:12.557Z",
+            "domain": "worldofbooks.com",
+            "path": "/",
+            "secure": true,
+            "hostOnly": false,
+            "creation": "2026-01-09T06:00:13.263Z",
+            "lastAccessed": "2026-01-09T06:00:13.263Z"
+          },
+          {
+            "key": "OptanonConsent",
+            "value": "isGpcEnabled=0&datestamp=Fri+Jan+09+2026+11%3A30%3A12+GMT%2B0530+(India+Standard+Time)&version=202506.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=a150d2ae-ff88-407d-afc2-5514eacf5e99&interactionCount=0&isAnonUser=1&landingPath=https%3A%2F%2Fwww.worldofbooks.com%2Fen-gb&groups=C0003%3A0%2CC0004%3A0%2CC0002%3A0%2CC0001%3A1",
+            "expires": "2027-01-09T06:00:12.000Z",
+            "domain": "worldofbooks.com",
+            "path": "/",
+            "hostOnly": false,
+            "creation": "2026-01-09T06:00:13.270Z",
+            "lastAccessed": "2026-01-09T06:00:13.270Z"
+          },
+          {
+            "key": "_shopify_essential",
+            "value": ":AZuhVz-kAAEAtDEcBWixHjUahajeL0AWxXmAwFg9h_r4MWwvK0PsiUPKYZRqzH5MDhgu-ouO0fnrHzfYhejw0o0VpZO8M_pvbR3WTf6H4HtmaSuwBrUlPPUpzVXzv2iFrz5xXlRV3f3uixMyPi8RUUty6vsV8eHn382AqobsZfjACeT75J7GI1eECqL2qD0KoWZVeA6JyrJyb9AvUUHuRF9crZkzpEr0hgAG0dcIWmwX34IHcBShu5M06pzH3kD8VVoH2jq_IZ90gsltHVGpY60WOO5Y7arY0Gb1yfDGiV1N4S3urd2sJRf0rhZR640PFRv1Tlu_qX6hZiHyzFdquPAvnzAm7mQZK-OHJNzYJ8CZqFf5WyOz3nN5wZYKpK1nAez-9HV2Kf1_dTqQo-1hk937AlbHteXc:",
+            "expires": "2027-01-09T06:00:12.997Z",
+            "domain": "www.worldofbooks.com",
+            "path": "/",
+            "secure": true,
+            "httpOnly": true,
+            "hostOnly": true,
+            "creation": "2026-01-09T06:00:13.273Z",
+            "lastAccessed": "2026-01-09T06:00:13.273Z"
+          }
+        ]
+      },
+      "userData": {},
+      "maxErrorScore": 3,
+      "errorScoreDecrement": 0.5,
+      "expiresAt": "2026-01-09T06:50:04.583Z",
+      "createdAt": "2026-01-09T06:00:04.583Z",
+      "usageCount": 1,
+      "maxUsageCount": 50,
+      "errorScore": 0
+    }
+  ]
+}
