@@ -48,7 +48,7 @@ export class ScrapingService {
         });
 
         // Deduplicate based on slug
-        const uniqueCats = [];
+        const uniqueCats: any[] = [];
         const seen = new Set();
         for (const c of categories) {
           if (!seen.has(c.slug)) {
