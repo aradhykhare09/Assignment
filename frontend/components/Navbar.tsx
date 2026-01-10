@@ -1,7 +1,21 @@
+'use client';
+
 import Link from 'next/link';
 import { Search, ShoppingCart, Menu, BookOpen } from 'lucide-react';
+import { useRouter } from 'next/navigation';
+import { useState } from 'react';
 
 export default function Navbar() {
+    const router = useRouter();
+    const [query, setQuery] = useState('');
+
+    const handleSearch = (e: React.FormEvent) => {
+        e.preventDefault();
+        if (query.trim()) {
+            router.push(`/search?q=${encodeURIComponent(query)}`);
+        }
+    };
+
     return (
         <nav className="sticky top-0 z-50 w-full border-b border-gray-200 bg-white/80 backdrop-blur-md dark:border-gray-800 dark:bg-black/80">
             <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
@@ -13,16 +27,18 @@ export default function Navbar() {
                 </div>
 
                 <div className="hidden md:flex flex-1 items-center justify-center px-8">
-                    <div className="relative w-full max-w-md">
+                    <form onSubmit={handleSearch} className="relative w-full max-w-md">
                         <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
                             <Search className="h-4 w-4 text-gray-400" />
                         </div>
                         <input
                             type="text"
+                            value={query}
+                            onChange={(e) => setQuery(e.target.value)}
                             className="block w-full rounded-full border border-gray-200 bg-gray-50 py-2 pl-10 pr-4 text-sm focus:border-indigo-500 focus:outline-none focus:ring-1 focus:ring-indigo-500 dark:border-gray-700 dark:bg-gray-900 dark:text-white"
                             placeholder="Search for books, authors..."
                         />
-                    </div>
+                    </form>
                 </div>
 
                 <div className="flex items-center gap-4">

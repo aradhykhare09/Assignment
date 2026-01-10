@@ -22,11 +22,21 @@ export class ProductsService {
     ).exec();
   }
 
-  async findAll(categorySlug?: string): Promise<Product[]> {
+  async findAll(categorySlug?: string, search?: string): Promise<Product[]> {
+    const filter: any = {};
     if (categorySlug) {
-      return this.productModel.find({ categorySlug }).exec();
+      filter.categorySlug = categorySlug;
     }
-    return this.productModel.find().exec();
+    if (search) {
+      filter.$or = [
+        { title: { $regex: search, $options: 'i' } },
+        { author: { $regex: search, $options: 'i' } },
+      ];
+    }
+    console.log('Finding products with filter:', JSON.stringify(filter));
+    const results = await this.productModel.find(filter).exec();
+    console.log(`Found ${results.length} products`);
+    return results;
   }
 
   async findOne(id: string): Promise<Product | null> {

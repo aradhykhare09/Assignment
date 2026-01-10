@@ -1,0 +1,1037 @@
+{
+	"type": "products",
+	"data": [
+		{
+			"title": "Bestselling Fiction",
+			"price": "£3.90",
+			"imageUrl": "https://www.worldofbooks.com/cdn/shop/files/Fiction_UK_1.png?v=1756718716&width=3840",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/collections/fiction-books",
+			"sourceId": "fiction-books",
+			"author": "Bestselling Fiction"
+		},
+		{
+			"title": "Yellowface",
+			"price": "£3.90",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9780008532819.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/yellowface-book-rebecca-f-kuang-9780008532819",
+			"sourceId": "yellowface-book-rebecca-f-kuang-9780008532819",
+			"author": ""
+		},
+		{
+			"title": "The Seven Husbands of Evelyn Hugo",
+			"price": "£4.50",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9781398515697.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/seven-husbands-of-evelyn-hugo-book-taylor-jenkins-reid-9781398515697",
+			"sourceId": "seven-husbands-of-evelyn-hugo-book-taylor-jenkins-reid-9781398515697",
+			"author": ""
+		},
+		{
+			"title": "Tomorrow, and Tomorrow, and Tomorrow",
+			"price": "£3.80",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9781529115543.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/tomorrow-and-tomorrow-and-tomorrow-book-gabrielle-zevin-9781529115543",
+			"sourceId": "tomorrow-and-tomorrow-and-tomorrow-book-gabrielle-zevin-9781529115543",
+			"author": "Gabrielle Zevin"
+		},
+		{
+			"title": "The Wrong Sister",
+			"price": "£3.60",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9781405957618.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/wrong-sister-book-claire-douglas-9781405957618",
+			"sourceId": "wrong-sister-book-claire-douglas-9781405957618",
+			"author": "Claire Douglas"
+		},
+		{
+			"title": "The Burnout",
+			"price": "£3.60",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9781804990810.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/burnout-book-sophie-kinsella-9781804990810",
+			"sourceId": "burnout-book-sophie-kinsella-9781804990810",
+			"author": "The Burnout"
+		},
+		{
+			"title": "The Midnight Library",
+			"price": "£3.50",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9781786892737.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/midnight-library-book-matt-haig-9781786892737",
+			"sourceId": "midnight-library-book-matt-haig-9781786892737",
+			"author": "Matt Haig"
+		},
+		{
+			"title": "The Satsuma Complex",
+			"price": "£7.30",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9781398521230.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/satsuma-complex-book-bob-mortimer-9781398521230",
+			"sourceId": "satsuma-complex-book-bob-mortimer-9781398521230",
+			"author": "Bob Mortimer"
+		},
+		{
+			"title": "Normal People",
+			"price": "£3.70",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9780571334650.jpg?updatedAt=1764844994133",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/normal-people-book-sally-rooney-9780571334650",
+			"sourceId": "normal-people-book-sally-rooney-9780571334650",
+			"author": "Normal People"
+		},
+		{
+			"title": "The Handmaid's Tale",
+			"price": "£6.50",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9780099740919.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/handmaid-s-tale-book-margaret-atwood-9780099740919",
+			"sourceId": "handmaid-s-tale-book-margaret-atwood-9780099740919",
+			"author": "Margaret Atwood"
+		},
+		{
+			"title": "Butter",
+			"price": "£4.10",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9780008511685.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/butter-book-asako-yuzuki-9780008511685",
+			"sourceId": "butter-book-asako-yuzuki-9780008511685",
+			"author": "Asako Yuzuki"
+		},
+		{
+			"title": "The Lost Bookshop",
+			"price": "£6.60",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9780008609214.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/lost-bookshop-book-evie-woods-9780008609214",
+			"sourceId": "lost-bookshop-book-evie-woods-9780008609214",
+			"author": "Evie Woods"
+		},
+		{
+			"title": "No One Saw a Thing",
+			"price": "£5.00",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9781804990780.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/no-one-saw-a-thing-book-andrea-mara-9781804990780",
+			"sourceId": "no-one-saw-a-thing-book-andrea-mara-9781804990780",
+			"author": "Andrea Mara"
+		},
+		{
+			"title": "Before the Coffee Gets Cold",
+			"price": "£8.00",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9781529029581.jpg?updatedAt=1767350427255",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/before-the-coffee-gets-cold-book-toshikazu-kawaguchi-9781529029581",
+			"sourceId": "before-the-coffee-gets-cold-book-toshikazu-kawaguchi-9781529029581",
+			"author": "Toshikazu Kawaguchi"
+		},
+		{
+			"title": "The Housemaid",
+			"price": "£8.00",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9781408728512.jpg?updatedAt=1766657396365",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/housemaid-book-freida-mcfadden-9781408728512",
+			"sourceId": "housemaid-book-freida-mcfadden-9781408728512",
+			"author": "The Housemaid"
+		},
+		{
+			"title": "The Pumpkin Spice Cafe",
+			"price": "£3.90",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9780008610678.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/pumpkin-spice-cafe-book-laurie-gilmore-9780008610678",
+			"sourceId": "pumpkin-spice-cafe-book-laurie-gilmore-9780008610678",
+			"author": "Laurie Gilmore"
+		},
+		{
+			"title": "Then She Was Gone",
+			"price": "£3.90",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9781784756253.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/then-she-was-gone-book-lisa-jewell-9781784756253",
+			"sourceId": "then-she-was-gone-book-lisa-jewell-9781784756253",
+			"author": "Lisa Jewell"
+		},
+		{
+			"title": "Lessons in Chemistry",
+			"price": "£3.60",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9781804990926.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/lessons-in-chemistry-book-bonnie-garmus-9781804990926",
+			"sourceId": "lessons-in-chemistry-book-bonnie-garmus-9781804990926",
+			"author": "Bonnie Garmus"
+		},
+		{
+			"title": "Never Let Me Go",
+			"price": "£7.00",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9780571258093.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/never-let-me-go-book-kazuo-ishiguro-9780571258093",
+			"sourceId": "never-let-me-go-book-kazuo-ishiguro-9780571258093",
+			"author": "Kazuo Ishiguro"
+		},
+		{
+			"title": "Verity",
+			"price": "£3.60",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9781408726600.jpg?updatedAt=1766139043498",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/verity-book-colleen-hoover-9781408726600",
+			"sourceId": "verity-book-colleen-hoover-9781408726600",
+			"author": "Colleen Hoover"
+		},
+		{
+			"title": "None of This is True",
+			"price": "£3.70",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9781804940204.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/none-of-this-is-true-book-lisa-jewell-9781804940204",
+			"sourceId": "none-of-this-is-true-book-lisa-jewell-9781804940204",
+			"author": "Lisa Jewell"
+		},
+		{
+			"title": "My Not So Perfect Life",
+			"price": "£3.50",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9781784160425.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/my-not-so-perfect-life-book-sophie-kinsella-9781784160425",
+			"sourceId": "my-not-so-perfect-life-book-sophie-kinsella-9781784160425",
+			"author": "Sophie Kinsella"
+		},
+		{
+			"title": "What Does it Feel Like?",
+			"price": "£9.80",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9780857506924.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/what-does-it-feel-like-book-sophie-kinsella-9780857506924",
+			"sourceId": "what-does-it-feel-like-book-sophie-kinsella-9780857506924",
+			"author": "Sophie Kinsella"
+		},
+		{
+			"title": "Christmas Shopaholic",
+			"price": "£3.60",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9781784164874.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/christmas-shopaholic-book-sophie-kinsella-9781784164874",
+			"sourceId": "christmas-shopaholic-book-sophie-kinsella-9781784164874",
+			"author": "Christmas Shopaholic"
+		},
+		{
+			"title": "Can You Keep A Secret?",
+			"price": "£3.50",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9780552771108.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/can-you-keep-a-secret-book-sophie-kinsella-9780552771108",
+			"sourceId": "can-you-keep-a-secret-book-sophie-kinsella-9780552771108",
+			"author": "Sophie Kinsella"
+		},
+		{
+			"title": "The Undomestic Goddess",
+			"price": "£3.80",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9780552772747.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/undomestic-goddess-book-sophie-kinsella-9780552772747",
+			"sourceId": "undomestic-goddess-book-sophie-kinsella-9780552772747",
+			"author": "Sophie Kinsella"
+		},
+		{
+			"title": "Remember Me?",
+			"price": "£3.60",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9780552772761.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/remember-me-book-sophie-kinsella-9780552772761",
+			"sourceId": "remember-me-book-sophie-kinsella-9780552772761",
+			"author": "Sophie Kinsella"
+		},
+		{
+			"title": "Love Your Life",
+			"price": "£3.60",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9781787632301.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/love-your-life-book-sophie-kinsella-9781787632301",
+			"sourceId": "love-your-life-book-sophie-kinsella-9781787632301",
+			"author": "Sophie Kinsella"
+		},
+		{
+			"title": "The Secret Dreamworld Of A Shopaholic",
+			"price": "£3.50",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9780552998871.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/secret-dreamworld-of-a-shopaholic-book-sophie-kinsella-9780552998871",
+			"sourceId": "secret-dreamworld-of-a-shopaholic-book-sophie-kinsella-9780552998871",
+			"author": "Sophie Kinsella"
+		},
+		{
+			"title": "The Party Crasher",
+			"price": "£3.50",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9781529176889.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/party-crasher-book-sophie-kinsella-9781529176889",
+			"sourceId": "party-crasher-book-sophie-kinsella-9781529176889",
+			"author": "Sophie Kinsella"
+		},
+		{
+			"title": "Shopaholic & Sister",
+			"price": "£3.50",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9780552771115.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/shopaholic-sister-book-sophie-kinsella-9780552771115",
+			"sourceId": "shopaholic-sister-book-sophie-kinsella-9780552771115",
+			"author": "Sophie Kinsella"
+		},
+		{
+			"title": "The Secret Dreamworld Of A Shopaholic",
+			"price": "£6.80",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9780552778329.jpg?updatedAt=1767092529748",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/secret-dreamworld-of-a-shopaholic-book-sophie-kinsella-9780552778329",
+			"sourceId": "secret-dreamworld-of-a-shopaholic-book-sophie-kinsella-9780552778329",
+			"author": "Sophie Kinsella"
+		},
+		{
+			"title": "I Owe You One",
+			"price": "£3.60",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9781784163570.jpg?updatedAt=1767356858190",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/i-owe-you-one-book-sophie-kinsella-9781784163570",
+			"sourceId": "i-owe-you-one-book-sophie-kinsella-9781784163570",
+			"author": "Sophie Kinsella"
+		},
+		{
+			"title": "Shopaholic to the Rescue",
+			"price": "£3.60",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9781784160364.jpg?updatedAt=1767350760965",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/shopaholic-to-the-rescue-book-sophie-kinsella-9781784160364",
+			"sourceId": "shopaholic-to-the-rescue-book-sophie-kinsella-9781784160364",
+			"author": "Sophie Kinsella"
+		},
+		{
+			"title": "Surprise Me",
+			"price": "£3.50",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9781784160432.jpg?updatedAt=1767348969104",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/surprise-me-book-sophie-kinsella-9781784160432",
+			"sourceId": "surprise-me-book-sophie-kinsella-9781784160432",
+			"author": "Surprise Me"
+		},
+		{
+			"title": "I've Got Your Number",
+			"price": "£3.80",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9780552774406.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/i-ve-got-your-number-book-sophie-kinsella-9780552774406",
+			"sourceId": "i-ve-got-your-number-book-sophie-kinsella-9780552774406",
+			"author": "Sophie Kinsella"
+		},
+		{
+			"title": "Love Your Life",
+			"price": "£3.60",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9781784163587.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/love-your-life-book-sophie-kinsella-9781784163587",
+			"sourceId": "love-your-life-book-sophie-kinsella-9781784163587",
+			"author": "Sophie Kinsella"
+		},
+		{
+			"title": "Wedding Night",
+			"price": "£3.50",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9780552778510.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/wedding-night-book-sophie-kinsella-9780552778510",
+			"sourceId": "wedding-night-book-sophie-kinsella-9780552778510",
+			"author": "Wedding Night"
+		},
+		{
+			"title": "Shopaholic Abroad",
+			"price": "£7.50",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9780552778336.jpg?updatedAt=1767090867398",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/shopaholic-abroad-book-sophie-kinsella-9780552778336",
+			"sourceId": "shopaholic-abroad-book-sophie-kinsella-9780552778336",
+			"author": "Shopaholic Abroad"
+		},
+		{
+			"title": "Twenties Girl",
+			"price": "£3.60",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9780552774369.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/twenties-girl-book-sophie-kinsella-9780552774369",
+			"sourceId": "twenties-girl-book-sophie-kinsella-9780552774369",
+			"author": "Twenties Girl"
+		},
+		{
+			"title": "All the Light We Cannot See",
+			"price": "£3.90",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9780008138301.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/all-the-light-we-cannot-see-book-anthony-doerr-9780008138301",
+			"sourceId": "all-the-light-we-cannot-see-book-anthony-doerr-9780008138301",
+			"author": "Anthony Doerr"
+		},
+		{
+			"title": "Small Pleasures",
+			"price": "£6.30",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9781474613903.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/small-pleasures-book-clare-chambers-9781474613903",
+			"sourceId": "small-pleasures-book-clare-chambers-9781474613903",
+			"author": "Small Pleasures"
+		},
+		{
+			"title": "The Marriage Portrait",
+			"price": "£3.60",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9781472223883.jpg?updatedAt=1766659635655",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/marriage-portrait-book-maggie-o-farrell-9781472223883",
+			"sourceId": "marriage-portrait-book-maggie-o-farrell-9781472223883",
+			"author": ""
+		},
+		{
+			"title": "A Man Called Ove",
+			"price": "£3.60",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9781444775815.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/man-called-ove-book-fredrik-backman-9781444775815",
+			"sourceId": "man-called-ove-book-fredrik-backman-9781444775815",
+			"author": "Fredrik Backman"
+		},
+		{
+			"title": "The Book of Beginnings",
+			"price": "£4.10",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9780008612870.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/book-of-beginnings-book-sally-page-9780008612870",
+			"sourceId": "book-of-beginnings-book-sally-page-9780008612870",
+			"author": "Sally Page"
+		},
+		{
+			"title": "The Goldfinch",
+			"price": "£3.60",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9780349139630.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/goldfinch-book-donna-tartt-9780349139630",
+			"sourceId": "goldfinch-book-donna-tartt-9780349139630",
+			"author": "The Goldfinch"
+		},
+		{
+			"title": "The Alchemist",
+			"price": "£4.50",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9780722532935.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/alchemist-book-paulo-coelho-9780722532935",
+			"sourceId": "alchemist-book-paulo-coelho-9780722532935",
+			"author": "The Alchemist"
+		},
+		{
+			"title": "The People on Platform 5",
+			"price": "£3.60",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9781804990971.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/people-on-platform-5-book-clare-pooley-9781804990971",
+			"sourceId": "people-on-platform-5-book-clare-pooley-9781804990971",
+			"author": "Clare Pooley"
+		},
+		{
+			"title": "Cleopatra and Frankenstein",
+			"price": "£7.30",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9780008421793.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/cleopatra-and-frankenstein-book-coco-mellors-9780008421793",
+			"sourceId": "cleopatra-and-frankenstein-book-coco-mellors-9780008421793",
+			"author": "Coco Mellors"
+		},
+		{
+			"title": "Intermezzo",
+			"price": "£7.80",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9780571365487.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/intermezzo-book-sally-rooney-9780571365487",
+			"sourceId": "intermezzo-book-sally-rooney-9780571365487",
+			"author": "Sally Rooney"
+		},
+		{
+			"title": "The Life Impossible",
+			"price": "£7.00",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9781838855611.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/life-impossible-book-matt-haig-9781838855611",
+			"sourceId": "life-impossible-book-matt-haig-9781838855611",
+			"author": "Matt Haig"
+		},
+		{
+			"title": "The List",
+			"price": "£4.70",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9780008544539.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/list-book-yomi-adegoke-9780008544539",
+			"sourceId": "list-book-yomi-adegoke-9780008544539",
+			"author": "The List"
+		},
+		{
+			"title": "Good Material",
+			"price": "£5.00",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9780241993163.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/good-material-book-dolly-alderton-9780241993163",
+			"sourceId": "good-material-book-dolly-alderton-9780241993163",
+			"author": "Good Material"
+		},
+		{
+			"title": "Way Back",
+			"price": "£5.10",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9781529392548.jpg?updatedAt=1765447194717",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/way-back-book-sara-cox-9781529392548",
+			"sourceId": "way-back-book-sara-cox-9781529392548",
+			"author": "Way Back"
+		},
+		{
+			"title": "Daisy Jones and The Six",
+			"price": "£3.80",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9781787462144.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/daisy-jones-and-the-six-book-taylor-jenkins-reid-9781787462144",
+			"sourceId": "daisy-jones-and-the-six-book-taylor-jenkins-reid-9781787462144",
+			"author": ""
+		},
+		{
+			"title": "You Are Here",
+			"price": "£7.10",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9781444715460.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/you-are-here-book-david-nicholls-9781444715460",
+			"sourceId": "you-are-here-book-david-nicholls-9781444715460",
+			"author": "David Nicholls"
+		},
+		{
+			"title": "The Trial",
+			"price": "£3.60",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9781804940389.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/trial-book-rob-rinder-9781804940389",
+			"sourceId": "trial-book-rob-rinder-9781804940389",
+			"author": "The Trial"
+		},
+		{
+			"title": "The Family Upstairs",
+			"price": "£3.80",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9781787461482.jpg?updatedAt=1764843108926",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/family-upstairs-book-lisa-jewell-9781787461482",
+			"sourceId": "family-upstairs-book-lisa-jewell-9781787461482",
+			"author": "Lisa Jewell"
+		},
+		{
+			"title": "Murder in My Backyard",
+			"price": "£4.10",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9781529070545.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/murder-in-my-backyard-book-ann-cleeves-9781529070545",
+			"sourceId": "murder-in-my-backyard-book-ann-cleeves-9781529070545",
+			"author": "Ann Cleeves"
+		},
+		{
+			"title": "The Midnight Hour",
+			"price": "£3.60",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9781405956161.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/midnight-hour-book-eve-chase-9781405956161",
+			"sourceId": "midnight-hour-book-eve-chase-9781405956161",
+			"author": "Eve Chase"
+		},
+		{
+			"title": "Murder on Lake Garda",
+			"price": "£3.60",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9781804942369.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/murder-on-lake-garda-book-tom-hindle-9781804942369",
+			"sourceId": "murder-on-lake-garda-book-tom-hindle-9781804942369",
+			"author": "Tom Hindle"
+		},
+		{
+			"title": "We Solve Murders",
+			"price": "£4.20",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9780241997482.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/we-solve-murders-book-richard-osman-9780241997482",
+			"sourceId": "we-solve-murders-book-richard-osman-9780241997482",
+			"author": "Richard Osman"
+		},
+		{
+			"title": "Six Years",
+			"price": "£6.50",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9781409103943.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/six-years-book-harlan-coben-9781409103943",
+			"sourceId": "six-years-book-harlan-coben-9781409103943",
+			"author": "Six Years"
+		},
+		{
+			"title": "The Black Loch",
+			"price": "£3.90",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9781529436105.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/black-loch-book-peter-may-9781529436105",
+			"sourceId": "black-loch-book-peter-may-9781529436105",
+			"author": "Peter May"
+		},
+		{
+			"title": "Death and Croissants",
+			"price": "£3.90",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9781788424233.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/death-and-croissants-book-ian-moore-9781788424233",
+			"sourceId": "death-and-croissants-book-ian-moore-9781788424233",
+			"author": "Ian Moore"
+		},
+		{
+			"title": "Death at the Sign of the Rook",
+			"price": "£3.60",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9781804994528.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/death-at-the-sign-of-the-rook-book-kate-atkinson-9781804994528",
+			"sourceId": "death-at-the-sign-of-the-rook-book-kate-atkinson-9781804994528",
+			"author": "Kate Atkinson"
+		},
+		{
+			"title": "The Woman in Cabin 10",
+			"price": "£3.90",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9780099598237.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/woman-in-cabin-10-book-ruth-ware-9780099598237",
+			"sourceId": "woman-in-cabin-10-book-ruth-ware-9780099598237",
+			"author": "Ruth Ware"
+		},
+		{
+			"title": "After That Night",
+			"price": "£3.60",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9780008499433.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/after-that-night-book-karin-slaughter-9780008499433",
+			"sourceId": "after-that-night-book-karin-slaughter-9780008499433",
+			"author": "Karin Slaughter"
+		},
+		{
+			"title": "Midnight and Blue",
+			"price": "£3.90",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9781398709454.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/midnight-and-blue-book-ian-rankin-9781398709454",
+			"sourceId": "midnight-and-blue-book-ian-rankin-9781398709454",
+			"author": "Ian Rankin"
+		},
+		{
+			"title": "The Waiting",
+			"price": "£3.90",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9781398719033.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/the-waiting-book-michael-connelly-9781398719033",
+			"sourceId": "the-waiting-book-michael-connelly-9781398719033",
+			"author": "The Waiting"
+		},
+		{
+			"title": "This is Why We Lied",
+			"price": "£3.60",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9780008625863.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/this-is-why-we-lied-book-karin-slaughter-9780008625863",
+			"sourceId": "this-is-why-we-lied-book-karin-slaughter-9780008625863",
+			"author": "Karin Slaughter"
+		},
+		{
+			"title": "Just Another Missing Person",
+			"price": "£3.60",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9781405949866.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/just-another-missing-person-book-gillian-mcallister-9781405949866",
+			"sourceId": "just-another-missing-person-book-gillian-mcallister-9781405949866",
+			"author": "Gillian Mcallister"
+		},
+		{
+			"title": "The Last Word",
+			"price": "£4.10",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9781529433470.jpg?updatedAt=1766138276719",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/last-word-book-elly-griffiths-9781529433470",
+			"sourceId": "last-word-book-elly-griffiths-9781529433470",
+			"author": "Elly Griffiths"
+		},
+		{
+			"title": "The Reunion",
+			"price": "£4.10",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9781398716575.jpg?updatedAt=1766138636341",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/reunion-book-m-j-arlidge-9781398716575",
+			"sourceId": "reunion-book-m-j-arlidge-9781398716575",
+			"author": "The Reunion"
+		},
+		{
+			"title": "The Last Dance",
+			"price": "£3.60",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9781408726358.jpg?updatedAt=1766659332401",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/last-dance-book-mark-billingham-9781408726358",
+			"sourceId": "last-dance-book-mark-billingham-9781408726358",
+			"author": "Mark Billingham"
+		},
+		{
+			"title": "Things We Never Got Over",
+			"price": "£3.60",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9781399713740.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/things-we-never-got-over-book-lucy-score-9781399713740",
+			"sourceId": "things-we-never-got-over-book-lucy-score-9781399713740",
+			"author": "Lucy Score"
+		},
+		{
+			"title": "The Love Hypothesis",
+			"price": "£3.90",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9781408725764.jpg?updatedAt=1764239852874",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/love-hypothesis-book-ali-hazelwood-9781408725764",
+			"sourceId": "love-hypothesis-book-ali-hazelwood-9781408725764",
+			"author": "Ali Hazelwood"
+		},
+		{
+			"title": "Twisted Love",
+			"price": "£3.60",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9780349434278.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/twisted-love-book-ana-huang-9780349434278",
+			"sourceId": "twisted-love-book-ana-huang-9780349434278",
+			"author": "Twisted Love"
+		},
+		{
+			"title": "What If I Never Get Over You",
+			"price": "£3.80",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9781804947869.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/what-if-i-never-get-over-you-book-paige-toon-9781804947869",
+			"sourceId": "what-if-i-never-get-over-you-book-paige-toon-9781804947869",
+			"author": "Paige Toon"
+		},
+		{
+			"title": "Confessions of a Forty-Something F**k Up",
+			"price": "£3.50",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9781529022803.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/confessions-of-a-forty-something-f-k-up-book-alexandra-potter-9781529022803",
+			"sourceId": "confessions-of-a-forty-something-f-k-up-book-alexandra-potter-9781529022803",
+			"author": "Alexandra Potter"
+		},
+		{
+			"title": "Icebreaker",
+			"price": "£3.60",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9781398525689.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/icebreaker-book-hannah-grace-9781398525689",
+			"sourceId": "icebreaker-book-hannah-grace-9781398525689",
+			"author": "Hannah Grace"
+		},
+		{
+			"title": "Snowed In For Christmas",
+			"price": "£3.60",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9781848458468.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/snowed-in-for-christmas-book-sarah-morgan-9781848458468",
+			"sourceId": "snowed-in-for-christmas-book-sarah-morgan-9781848458468",
+			"author": "Sarah Morgan"
+		},
+		{
+			"title": "The Cinnamon Bun Book Store",
+			"price": "£3.60",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9780008641580.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/cinnamon-bun-book-store-book-laurie-gilmore-9780008641580",
+			"sourceId": "cinnamon-bun-book-store-book-laurie-gilmore-9780008641580",
+			"author": "Laurie Gilmore"
+		},
+		{
+			"title": "Daydream",
+			"price": "£3.70",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9781398525740.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/daydream-book-hannah-grace-9781398525740",
+			"sourceId": "daydream-book-hannah-grace-9781398525740",
+			"author": "Hannah Grace"
+		},
+		{
+			"title": "Happy Place",
+			"price": "£3.60",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9780241995365.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/happy-place-book-emily-henry-9780241995365",
+			"sourceId": "happy-place-book-emily-henry-9780241995365",
+			"author": "Happy Place"
+		},
+		{
+			"title": "Collide",
+			"price": "£4.20",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9781526677525.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/collide-book-bal-khabra-9781526677525",
+			"sourceId": "collide-book-bal-khabra-9781526677525",
+			"author": "Bal Khabra"
+		},
+		{
+			"title": "A Thousand Broken Pieces",
+			"price": "£4.80",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9781405962964.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/thousand-broken-pieces-book-tillie-cole-9781405962964",
+			"sourceId": "thousand-broken-pieces-book-tillie-cole-9781405962964",
+			"author": "Tillie Cole"
+		},
+		{
+			"title": "The F**k It! List",
+			"price": "£7.20",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9781529176797.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/f-k-it-list-book-melanie-cantor-9781529176797",
+			"sourceId": "f-k-it-list-book-melanie-cantor-9781529176797",
+			"author": "Melanie Cantor"
+		},
+		{
+			"title": "Consider Me",
+			"price": "£7.00",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9781761425820.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/consider-me-book-becka-mack-9781761425820",
+			"sourceId": "consider-me-book-becka-mack-9781761425820",
+			"author": "Consider Me"
+		},
+		{
+			"title": "Problematic Summer Romance",
+			"price": "£5.60",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9781408729885.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/problematic-summer-romance-book-ali-hazelwood-9781408729885",
+			"sourceId": "problematic-summer-romance-book-ali-hazelwood-9781408729885",
+			"author": "Ali Hazelwood"
+		},
+		{
+			"title": "Twisted Games",
+			"price": "£4.50",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9780349434315.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/twisted-games-book-ana-huang-9780349434315",
+			"sourceId": "twisted-games-book-ana-huang-9780349434315",
+			"author": "Twisted Games"
+		},
+		{
+			"title": "King of Wrath",
+			"price": "£3.90",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9780349436326.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/king-of-wrath-book-ana-huang-9780349436326",
+			"sourceId": "king-of-wrath-book-ana-huang-9780349436326",
+			"author": "Ana Huang"
+		},
+		{
+			"title": "Flawless",
+			"price": "£3.30",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9780349437675.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/flawless-book-elsie-silver-9780349437675",
+			"sourceId": "flawless-book-elsie-silver-9780349437675",
+			"author": "Elsie Silver"
+		},
+		{
+			"title": "My Favourite Mistake",
+			"price": "£3.60",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9781405945424.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/my-favourite-mistake-book-marian-keyes-9781405945424",
+			"sourceId": "my-favourite-mistake-book-marian-keyes-9781405945424",
+			"author": "Marian Keyes"
+		},
+		{
+			"title": "The Hunting Party",
+			"price": "£3.60",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9780008297152.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/hunting-party-book-lucy-foley-9780008297152",
+			"sourceId": "hunting-party-book-lucy-foley-9780008297152",
+			"author": "Lucy Foley"
+		},
+		{
+			"title": "The Da Vinci Code",
+			"price": "£3.60",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9780552159715.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/da-vinci-code-book-dan-brown-9780552159715",
+			"sourceId": "da-vinci-code-book-dan-brown-9780552159715",
+			"author": "Dan Brown"
+		},
+		{
+			"title": "The Institute",
+			"price": "£3.90",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9781529355413.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/institute-book-stephen-king-9781529355413",
+			"sourceId": "institute-book-stephen-king-9781529355413",
+			"author": "The Institute"
+		},
+		{
+			"title": "Message Deleted",
+			"price": "£3.70",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9781405962490.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/message-deleted-book-k-l-slater-9781405962490",
+			"sourceId": "message-deleted-book-k-l-slater-9781405962490",
+			"author": "Message Deleted"
+		},
+		{
+			"title": "The Cottage",
+			"price": "£4.10",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9780008445973.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/cottage-book-lisa-stone-9780008445973",
+			"sourceId": "cottage-book-lisa-stone-9780008445973",
+			"author": "The Cottage"
+		},
+		{
+			"title": "How to Kill Men and Get Away With It",
+			"price": "£4.10",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9780008536695.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/how-to-kill-men-and-get-away-with-it-book-katy-brent-9780008536695",
+			"sourceId": "how-to-kill-men-and-get-away-with-it-book-katy-brent-9780008536695",
+			"author": "Katy Brent"
+		},
+		{
+			"title": "The Blue Hour",
+			"price": "£4.10",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9781804995334.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/blue-hour-book-paula-hawkins-9781804995334",
+			"sourceId": "blue-hour-book-paula-hawkins-9781804995334",
+			"author": "Paula Hawkins"
+		},
+		{
+			"title": "Pretty Girls",
+			"price": "£3.60",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9780099599432.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/pretty-girls-book-karin-slaughter-9780099599432",
+			"sourceId": "pretty-girls-book-karin-slaughter-9780099599432",
+			"author": "Pretty Girls"
+		},
+		{
+			"title": "Someone in the Attic",
+			"price": "£3.60",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9781804990797.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/someone-in-the-attic-book-andrea-mara-9781804990797",
+			"sourceId": "someone-in-the-attic-book-andrea-mara-9781804990797",
+			"author": "Andrea Mara"
+		},
+		{
+			"title": "The Tenant",
+			"price": "£4.20",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9781464228629.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/tenant-book-freida-mcfadden-9781464228629",
+			"sourceId": "tenant-book-freida-mcfadden-9781464228629",
+			"author": "The Tenant"
+		},
+		{
+			"title": "Everyone Here is Lying",
+			"price": "£3.80",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9781529176155.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/everyone-here-is-lying-book-shari-lapena-9781529176155",
+			"sourceId": "everyone-here-is-lying-book-shari-lapena-9781529176155",
+			"author": "Shari Lapena"
+		},
+		{
+			"title": "Close to Death",
+			"price": "£3.60",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9781804942963.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/close-to-death-book-anthony-horowitz-9781804942963",
+			"sourceId": "close-to-death-book-anthony-horowitz-9781804942963",
+			"author": "Anthony Horowitz"
+		},
+		{
+			"title": "Think Twice",
+			"price": "£3.60",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9781804943410.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/think-twice-book-harlan-coben-9781804943410",
+			"sourceId": "think-twice-book-harlan-coben-9781804943410",
+			"author": "Think Twice"
+		},
+		{
+			"title": "The Cleaner",
+			"price": "£5.30",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9781804994177.jpg?updatedAt=1764844514463",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/cleaner-book-mary-watson-9781804994177",
+			"sourceId": "cleaner-book-mary-watson-9781804994177",
+			"author": "The Cleaner"
+		},
+		{
+			"title": "The Midnight Feast",
+			"price": "£3.60",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9780008385088.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/midnight-feast-book-lucy-foley-9780008385088",
+			"sourceId": "midnight-feast-book-lucy-foley-9780008385088",
+			"author": "Lucy Foley"
+		},
+		{
+			"title": "The New Neighbours",
+			"price": "£3.90",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9781405957656.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/new-neighbours-book-claire-douglas-9781405957656",
+			"sourceId": "new-neighbours-book-claire-douglas-9781405957656",
+			"author": "Claire Douglas"
+		},
+		{
+			"title": "The Last Tudor",
+			"price": "£3.60",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9781471133077.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/last-tudor-book-philippa-gregory-9781471133077",
+			"sourceId": "last-tudor-book-philippa-gregory-9781471133077",
+			"author": "Philippa Gregory"
+		},
+		{
+			"title": "The Bookseller of Inverness",
+			"price": "£3.90",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9781529414219.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/bookseller-of-inverness-book-sg-maclean-9781529414219",
+			"sourceId": "bookseller-of-inverness-book-sg-maclean-9781529414219",
+			"author": "Sg Maclean"
+		},
+		{
+			"title": "The Silence of the Girls",
+			"price": "£3.90",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9780241983201.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/silence-of-the-girls-book-pat-barker-9780241983201",
+			"sourceId": "silence-of-the-girls-book-pat-barker-9780241983201",
+			"author": "Pat Barker"
+		},
+		{
+			"title": "A Gentleman in Moscow",
+			"price": "£3.90",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9780099558781.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/gentleman-in-moscow-book-amor-towles-9780099558781",
+			"sourceId": "gentleman-in-moscow-book-amor-towles-9780099558781",
+			"author": "Amor Towles"
+		},
+		{
+			"title": "Pandora",
+			"price": "£3.60",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9781529114744.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/pandora-book-susan-stokes-chapman-9781529114744",
+			"sourceId": "pandora-book-susan-stokes-chapman-9781529114744",
+			"author": ""
+		},
+		{
+			"title": "The Ghost Ship",
+			"price": "£3.80",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9781509806935.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/ghost-ship-book-kate-mosse-9781509806935",
+			"sourceId": "ghost-ship-book-kate-mosse-9781509806935",
+			"author": "Kate Mosse"
+		},
+		{
+			"title": "The Botanist's Daughter",
+			"price": "£3.90",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9781409190530.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/botanist-s-daughter-book-kayte-nunn-9781409190530",
+			"sourceId": "botanist-s-daughter-book-kayte-nunn-9781409190530",
+			"author": "Kayte Nunn"
+		},
+		{
+			"title": "The Witches of Vardo",
+			"price": "£3.80",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9781786581952.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/witches-of-vardo-book-anya-bergman-9781786581952",
+			"sourceId": "witches-of-vardo-book-anya-bergman-9781786581952",
+			"author": "Anya Bergman"
+		},
+		{
+			"title": "The Beholders",
+			"price": "£3.50",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9780008559021.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/beholders-book-hester-musson-9780008559021",
+			"sourceId": "beholders-book-hester-musson-9780008559021",
+			"author": "The Beholders"
+		},
+		{
+			"title": "Longbourn",
+			"price": "£3.60",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9780552779517.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/longbourn-book-jo-baker-9780552779517",
+			"sourceId": "longbourn-book-jo-baker-9780552779517",
+			"author": "Jo Baker"
+		},
+		{
+			"title": "Stonehenge",
+			"price": "£4.00",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9780002259699.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/stonehenge-book-bernard-cornwell-9780002259699",
+			"sourceId": "stonehenge-book-bernard-cornwell-9780002259699",
+			"author": "Bernard Cornwell"
+		},
+		{
+			"title": "The Girl Who Escaped from Auschwitz",
+			"price": "£4.50",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9781836180678.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/girl-who-escaped-from-auschwitz-book-ellie-midwood-9781836180678",
+			"sourceId": "girl-who-escaped-from-auschwitz-book-ellie-midwood-9781836180678",
+			"author": "Ellie Midwood"
+		},
+		{
+			"title": "The Armour of Light",
+			"price": "£3.50",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9781447278856.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/armour-of-light-book-ken-follett-9781447278856",
+			"sourceId": "armour-of-light-book-ken-follett-9781447278856",
+			"author": "Ken Follett"
+		},
+		{
+			"title": "Mrs England",
+			"price": "£3.60",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9781838772888.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/mrs-england-book-stacey-halls-9781838772888",
+			"sourceId": "mrs-england-book-stacey-halls-9781838772888",
+			"author": "Mrs England"
+		},
+		{
+			"title": "The Magician",
+			"price": "£3.90",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9780241970584.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/magician-book-toibin-colm-9780241970584",
+			"sourceId": "magician-book-toibin-colm-9780241970584",
+			"author": "The Magician"
+		},
+		{
+			"title": "A Terrible Kindness",
+			"price": "£4.10",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9780571368310.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/terrible-kindness-book-jo-browning-wroe-9780571368310",
+			"sourceId": "terrible-kindness-book-jo-browning-wroe-9780571368310",
+			"author": ""
+		},
+		{
+			"title": "The Second Sleep",
+			"price": "£3.60",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9781787460966.jpg?updatedAt=1767353637823",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/second-sleep-book-robert-harris-9781787460966",
+			"sourceId": "second-sleep-book-robert-harris-9781787460966",
+			"author": "Robert Harris"
+		},
+		{
+			"title": "The Four Winds",
+			"price": "£3.60",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9781529054583.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/four-winds-book-kristin-hannah-9781529054583",
+			"sourceId": "four-winds-book-kristin-hannah-9781529054583",
+			"author": "Kristin Hannah"
+		},
+		{
+			"title": "A Place of Greater Safety",
+			"price": "£5.50",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9780007250554.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/place-of-greater-safety-book-hilary-mantel-9780007250554",
+			"sourceId": "place-of-greater-safety-book-hilary-mantel-9780007250554",
+			"author": "Hilary Mantel"
+		}
+	]
+}

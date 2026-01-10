@@ -5,7 +5,7 @@ import { RefreshCw } from 'lucide-react';
 import { scrapeProducts } from '@/lib/api';
 import { useRouter } from 'next/navigation';
 
-export default function ScrapeProductsButton({ slug }: { slug: string }) {
+export default function ScrapeProductsButton({ slug, label = 'Refresh Books' }: { slug: string, label?: string }) {
     const [loading, setLoading] = useState(false);
     const router = useRouter();
 
@@ -29,7 +29,7 @@ export default function ScrapeProductsButton({ slug }: { slug: string }) {
             className="flex items-center gap-2 rounded-lg bg-indigo-600 px-4 py-2 text-sm font-medium text-white transition hover:bg-indigo-700 disabled:opacity-50"
         >
             <RefreshCw className={`h-4 w-4 ${loading ? 'animate-spin' : ''}`} />
-            {loading ? 'Fetching Books...' : 'Refresh Books'}
+            {loading ? 'Fetching Books...' : label}
         </button>
     );
 }

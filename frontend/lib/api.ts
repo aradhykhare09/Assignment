@@ -1,15 +1,24 @@
 const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3000';
 
 export async function fetchCategories() {
-    const res = await fetch(`${API_BASE_URL}/categories`, {
-        next: { revalidate: 3600 }, // Cache for 1 hour
-    });
+    console.log('Fetching categories from:', `${API_BASE_URL}/categories`);
+    try {
+        const res = await fetch(`${API_BASE_URL}/categories`, {
+            next: { revalidate: 0 }, // Disable cache to see live data
+        });
 
-    if (!res.ok) {
-        throw new Error('Failed to fetch categories');
+        if (!res.ok) {
+            console.error('Fetch failed:', res.status, res.statusText);
+            throw new Error('Failed to fetch categories');
+        }
+
+        const data = await res.json();
+        console.log('Categories fetched:', data.length);
+        return data;
+    } catch (error) {
+        console.error('Error fetching categories:', error);
+        return [];
     }
-
-    return res.json();
 }
 
 export async function scrapeCategories() {

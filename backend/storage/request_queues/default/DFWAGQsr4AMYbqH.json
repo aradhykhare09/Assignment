@@ -1,0 +1,9 @@
+{
+	"id": "DFWAGQsr4AMYbqH",
+	"json": "{\"id\":\"DFWAGQsr4AMYbqH\",\"url\":\"https://www.worldofbooks.com/en-gb/pages/fiction\",\"loadedUrl\":\"https://www.worldofbooks.com/en-gb/pages/fiction\",\"uniqueKey\":\"https://www.worldofbooks.com/en-gb/pages/fiction\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"state\":4}},\"handledAt\":\"2026-01-09T07:32:59.241Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.worldofbooks.com/en-gb/pages/fiction",
+	"url": "https://www.worldofbooks.com/en-gb/pages/fiction"
+}

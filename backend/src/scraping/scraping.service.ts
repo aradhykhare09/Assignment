@@ -104,39 +104,97 @@ export class ScrapingService {
         log.info(`Processing ${page.url()}`);
 
         try {
-          await page.waitForLoadState('networkidle', { timeout: 20000 });
+          // Auto-scroll to bottom to trigger lazy loading
+          let previousHeight = 0;
+          while (true) {
+            const currentHeight = await page.evaluate<number>('document.body.scrollHeight');
+            if (currentHeight === previousHeight) break;
+            await page.evaluate('window.scrollTo(0, document.body.scrollHeight)');
+            await page.waitForTimeout(1000);
+            previousHeight = currentHeight;
+            // Limit scroll to avoid infinite loops on huge pages
+            if (currentHeight > 20000) break;
+          }
+          await page.waitForLoadState('networkidle', { timeout: 10000 });
         } catch (e) {
-          log.warning('Wait for networkidle timeout, proceeding anyway');
+          log.warning('Scroll/Wait failed, proceeding with what we have');
         }
 
         const products = await page.evaluate(() => {
-          // FALLBACK STRATEGY: Find all links that look like products
-          // Product links usually contain: numeric ID or keywords, and are inside grid items
-          // Let's grab all A tags that contain an IMG and have some text (title).
+          const items: any[] = [];
 
-          const anchors = Array.from(document.querySelectorAll('a'));
-          return anchors.map(a => {
-            const img = a.querySelector('img');
-            // Price check is tricky if dynamic, let's look for currency symbols in the Text content of the anchor OR its parent
-            const parentText = a.parentElement?.innerText || '';
-            const anchorText = a.innerText;
-            const combinedText = anchorText + ' ' + parentText;
+          // Strategy: Find all images that are likely book covers
+          const images = Array.from(document.querySelectorAll('img'));
 
-            const priceMatch = combinedText.match(/([£$€]\d+(\.\d{2})?)/);
+          for (const img of images) {
+            // Filter out small icons/logos
+            if (img.width < 50 || img.height < 50) continue;
 
-            // Simple filter: must have image and likely a price
-            if (img && priceMatch) {
-              return {
-                title: (a.getAttribute('title') || img.getAttribute('alt') || a.innerText).trim(),
-                price: priceMatch[0],
-                imageUrl: img.src,
-                sourceUrl: a.href,
-                sourceId: a.href.split('/').pop(),
-                author: '' // hard to scrape generically
-              };
+            // Traverse up to find a container that might be the product card
+            let container = img.parentElement;
+            let foundPrice: string | null = null;
+            let foundTitle: string | null = null;
+            let foundLink: string | null = null;
+            let foundAuthor: string | null = null;
+
+            // Look up to 5 levels up
+            for (let i = 0; i < 5; i++) {
+              if (!container) break;
+
+              const text = container.innerText || '';
+              const priceMatch = text.match(/([£$€]\d+(\.\d{2})?)/);
+
+              if (priceMatch && !foundPrice) {
+                foundPrice = priceMatch[0];
+              }
+
+              // Check for link
+              if (container.tagName === 'A') {
+                foundLink = (container as HTMLAnchorElement).href;
+              } else {
+                const link = container.querySelector('a');
+                if (link) foundLink = link.href;
+              }
+
+              // Try to find title (usually typically H3, H4 or text that isn't price)
+              // Just use the link title or alt text for now as fallback
+              if (foundLink) {
+                // Check if container has enough text
+                const lines = text.split('\n').filter(l => l.trim().length > 0);
+                if (lines.length > 0) {
+                  // Heuristic: Title is typically first line, Author is often second line if it starts with "by" or "By"
+                  // Or sometimes just the second line if it looks like a name
+
+                  foundTitle = lines.find(l => l.length > 5 && !l.includes('£') && !l.includes('Add to')) || null;
+
+                  // Try to find author
+                  const authorLine = lines.find(l => l.toLowerCase().startsWith('by ') || l.match(/^[A-Z][a-z]+ [A-Z][a-z]+$/));
+                  if (authorLine) {
+                    foundAuthor = authorLine.replace(/^by /i, '').trim();
+                  }
+                }
+              }
+
+              if (foundPrice && foundLink) {
+                break;
+              }
+
+              container = container.parentElement;
             }
-            return null;
-          }).filter(p => p && p.title.length > 2 && !p.title.includes('Item added') && !p.title.includes('cart'));
+
+            if (foundPrice && foundLink && !items.find(x => x.sourceUrl === foundLink)) {
+              items.push({
+                title: foundTitle || img.alt || 'Unknown Book',
+                price: foundPrice,
+                imageUrl: img.src,
+                sourceUrl: foundLink,
+                sourceId: foundLink.split('/').filter(x => x).pop() || 'unknown-' + Math.random(),
+                author: foundAuthor || ''
+              });
+            }
+          }
+
+          return items;
         });
 
         log.info(`Found ${products.length} products`);
@@ -154,17 +212,22 @@ export class ScrapingService {
     for (const item of items) {
       if (item.type === 'products') {
         for (const p of (item.data as any[])) {
-          if (p && p.title && p.sourceUrl) {
-            await this.productsService.upsert({
-              title: p.title,
-              price: p.price,
-              sourceUrl: p.sourceUrl,
-              imageUrl: p.imageUrl,
-              author: p.author,
-              lastScrapedAt: new Date(),
-              categorySlug: categorySlug,
-            });
-            count++;
+          // Ensure valid sourceId and title
+          if (p && p.title && p.sourceUrl && p.sourceId && p.sourceId.trim() !== '') {
+            try {
+              await this.productsService.upsert({
+                title: p.title,
+                price: p.price,
+                sourceUrl: p.sourceUrl,
+                imageUrl: p.imageUrl,
+                author: p.author,
+                lastScrapedAt: new Date(),
+                categorySlug: categorySlug,
+              });
+              count++;
+            } catch (e) {
+              this.logger.warn(`Failed to upsert product ${p.title}: ${e.message}`);
+            }
           }
         }
       }
