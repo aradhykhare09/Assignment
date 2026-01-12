@@ -4,6 +4,9 @@ import { fetchCategories } from '@/lib/api';
 import Link from 'next/link';
 import { ArrowRight, BookOpen } from 'lucide-react';
 
+// Force dynamic rendering - don't try to fetch at build time
+export const dynamic = 'force-dynamic';
+
 // Define the type for a Category based on what the API returns
 interface Category {
   _id: string;

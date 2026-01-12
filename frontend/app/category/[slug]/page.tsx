@@ -3,6 +3,9 @@ import Navbar from '@/components/Navbar';
 import ScrapeProductsButton from '@/components/ScrapeProductsButton';
 import Link from 'next/link';
 
+// Force dynamic rendering - don't try to fetch at build time
+export const dynamic = 'force-dynamic';
+
 interface Product {
     _id: string;
     title: string;
