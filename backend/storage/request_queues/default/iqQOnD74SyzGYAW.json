@@ -1,6 +1,6 @@
 {
 	"id": "iqQOnD74SyzGYAW",
-	"json": "{\"id\":\"iqQOnD74SyzGYAW\",\"url\":\"https://www.worldofbooks.com/\",\"loadedUrl\":\"https://www.worldofbooks.com/en-gb\",\"uniqueKey\":\"https://www.worldofbooks.com\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"state\":4}},\"handledAt\":\"2026-01-10T07:44:06.939Z\"}",
+	"json": "{\"id\":\"iqQOnD74SyzGYAW\",\"url\":\"https://www.worldofbooks.com/\",\"loadedUrl\":\"https://www.worldofbooks.com/en-gb\",\"uniqueKey\":\"https://www.worldofbooks.com\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"state\":4}},\"handledAt\":\"2026-01-12T09:34:42.566Z\"}",
 	"method": "GET",
 	"orderNo": null,
 	"retryCount": 0,
