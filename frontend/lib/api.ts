@@ -1,4 +1,5 @@
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3000';
+// Use env variable first, then production Railway URL, then localhost
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'https://assignment-production-10ba.up.railway.app';
 
 export interface Category {
     _id: string;
