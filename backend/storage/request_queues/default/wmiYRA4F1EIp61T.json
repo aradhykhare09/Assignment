@@ -1,9 +1,0 @@
-{
-	"id": "wmiYRA4F1EIp61T",
-	"json": "{\"id\":\"wmiYRA4F1EIp61T\",\"url\":\"https://www.worldofbooks.com/en-gb/pages/Gift-cards\",\"loadedUrl\":\"https://www.worldofbooks.com/en-gb/pages/Gift-cards\",\"uniqueKey\":\"https://www.worldofbooks.com/en-gb/pages/Gift-cards\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"state\":4}},\"handledAt\":\"2026-01-09T07:32:14.983Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.worldofbooks.com/en-gb/pages/Gift-cards",
-	"url": "https://www.worldofbooks.com/en-gb/pages/Gift-cards"
-}

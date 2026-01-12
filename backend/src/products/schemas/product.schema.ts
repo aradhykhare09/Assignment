@@ -20,10 +20,10 @@ export class Product {
     @Prop()
     imageUrl: string;
 
-    @Prop({ required: true, unique: true })
+    @Prop({ required: true })
     sourceUrl: string;
 
-    @Prop({ unique: true })
+    @Prop()
     sourceId: string;
 
     @Prop()

@@ -2,7 +2,7 @@ import Navbar from '@/components/Navbar';
 import ScrapeButton from '@/components/ScrapeButton';
 import { fetchCategories } from '@/lib/api';
 import Link from 'next/link';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, BookOpen } from 'lucide-react';
 
 // Define the type for a Category based on what the API returns
 interface Category {
@@ -17,9 +17,12 @@ export default async function Home() {
   // Fetch categories server-side
   let categories: Category[] = [];
   try {
-    categories = await fetchCategories();
+    const result = await fetchCategories();
+    // Ensure we have an array
+    categories = Array.isArray(result) ? result : [];
   } catch (error) {
     console.error('Error fetching categories:', error);
+    categories = [];
   }
 
   return (
@@ -44,9 +47,6 @@ export default async function Home() {
                 >
                   Start Exploring
                 </a>
-                <a href="#" className="hidden text-sm font-semibold leading-6 text-gray-900 dark:text-white">
-                  Learn more <span aria-hidden="true">→</span>
-                </a>
                 <ScrapeButton />
               </div>
             </div>
@@ -58,7 +58,9 @@ export default async function Home() {
                   <div className="rounded-md bg-white p-6 shadow-2xl dark:bg-gray-900">
                     <div className="text-center p-10">
                       <p className="text-gray-500">Live Scraper Stats</p>
-                      <p className="text-4xl font-bold text-indigo-600 mt-2">{categories.length}</p>
+                      <p className="text-4xl font-bold text-indigo-600 mt-2" suppressHydrationWarning>
+                        {categories.length}
+                      </p>
                       <p className="text-sm text-gray-400">Categories Indexed</p>
                     </div>
                   </div>
@@ -77,31 +79,60 @@ export default async function Home() {
             </div>
 
             {categories.length === 0 ? (
-              <div className="text-center py-20 bg-white rounded-lg border border-dashed border-gray-300">
-                <p className="text-gray-500">No categories found. Click "Refresh Categories" to scrape.</p>
+              <div className="text-center py-20 bg-white dark:bg-gray-900 rounded-lg border border-dashed border-gray-300 dark:border-gray-700 cursor-pointer">
+                <p className="text-gray-500">No categories found. Click &quot;Refresh Categories&quot; to scrape.</p>
               </div>
             ) : (
-              <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
-                {categories.map((category) => (
-                  <div key={category._id} className="group relative">
-                    <div className="aspect-[4/3] w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-40 flex items-center justify-center">
-                      {/* Placeholder for category image since we don't scrape it yet */}
-                      <span className="text-4xl">📚</span>
-                    </div>
-                    <div className="mt-4 flex justify-between">
-                      <div>
-                        <h3 className="text-sm font-medium text-gray-900 dark:text-white">
-                          <Link href={`/category/${category.slug}`}>
-                            <span aria-hidden="true" className="absolute inset-0" />
-                            {category.title}
-                          </Link>
-                        </h3>
-                        <p className="mt-1 text-sm text-gray-500">{category.productCount || 0} products</p>
+              <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+                {categories.map((category, index) => {
+                  // Different gradient colors for visual variety
+                  const gradients = [
+                    'from-indigo-500 to-purple-600',
+                    'from-pink-500 to-rose-600',
+                    'from-cyan-500 to-blue-600',
+                    'from-emerald-500 to-teal-600',
+                    'from-orange-500 to-amber-600',
+                    'from-violet-500 to-purple-600',
+                    'from-sky-500 to-indigo-600',
+                    'from-fuchsia-500 to-pink-600',
+                  ];
+                  const gradient = gradients[index % gradients.length];
+
+                  return (
+                    <Link
+                      key={category._id}
+                      href={`/category/${category.slug}`}
+                      className="group relative overflow-hidden rounded-2xl bg-white dark:bg-gray-900 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+                    >
+                      {/* Gradient Header */}
+                      <div className={`h-32 bg-gradient-to-br ${gradient} flex items-center justify-center relative overflow-hidden`}>
+                        {/* Background Pattern */}
+                        <div className="absolute inset-0 opacity-20">
+                          <div className="absolute top-2 left-2 w-8 h-8 border-2 border-white rounded-lg rotate-12"></div>
+                          <div className="absolute bottom-4 right-4 w-6 h-6 border-2 border-white rounded-lg -rotate-12"></div>
+                          <div className="absolute top-8 right-8 w-4 h-4 border-2 border-white rounded-full"></div>
+                        </div>
+                        {/* Book Icon */}
+                        <div className="relative bg-white/20 backdrop-blur-sm rounded-2xl p-4 group-hover:scale-110 transition-transform duration-300">
+                          <BookOpen className="h-10 w-10 text-white" />
+                        </div>
                       </div>
-                      <ArrowRight className="h-4 w-4 text-gray-400 group-hover:text-indigo-600" />
-                    </div>
-                  </div>
-                ))}
+
+                      {/* Content */}
+                      <div className="p-5">
+                        <h3 className="text-lg font-semibold text-gray-900 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors line-clamp-1">
+                          {category.title}
+                        </h3>
+                        <div className="mt-2 flex items-center justify-between">
+                          <span className="text-sm text-gray-500 dark:text-gray-400">
+                            {category.productCount || 0} books
+                          </span>
+                          <ArrowRight className="h-4 w-4 text-gray-400 group-hover:text-indigo-600 group-hover:translate-x-1 transition-all" />
+                        </div>
+                      </div>
+                    </Link>
+                  );
+                })}
               </div>
             )}
 

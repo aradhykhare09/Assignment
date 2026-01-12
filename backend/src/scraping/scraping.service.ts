@@ -86,6 +86,9 @@ export class ScrapingService {
       }
     }
 
+    // Clear dataset after processing
+    await dataset.drop();
+
     this.logger.log(`Category scrape finished. Upserted ${count} categories.`);
     return { success: true, count };
   }
@@ -93,146 +96,232 @@ export class ScrapingService {
   async scrapeProducts(categorySlug: string) {
     this.logger.log(`Starting product scrape for category: ${categorySlug}`);
 
-    const category = await this.categoriesService.findBySlug(categorySlug);
-    if (!category || !category.url) {
-      throw new Error(`Category not found or has no URL: ${categorySlug}`);
-    }
+    try {
+      const category = await this.categoriesService.findBySlug(categorySlug);
+      if (!category || !category.url) {
+        this.logger.error(`Category not found or has no URL: ${categorySlug}`);
+        return { success: false, count: 0, error: `Category not found: ${categorySlug}` };
+      }
 
-    const crawler = new PlaywrightCrawler({
-      headless: true,
-      requestHandler: async ({ page, log }) => {
-        log.info(`Processing ${page.url()}`);
+      this.logger.log(`Scraping URL: ${category.url}`);
 
-        try {
-          // Auto-scroll to bottom to trigger lazy loading
-          let previousHeight = 0;
-          while (true) {
-            const currentHeight = await page.evaluate<number>('document.body.scrollHeight');
-            if (currentHeight === previousHeight) break;
-            await page.evaluate('window.scrollTo(0, document.body.scrollHeight)');
-            await page.waitForTimeout(1000);
-            previousHeight = currentHeight;
-            // Limit scroll to avoid infinite loops on huge pages
-            if (currentHeight > 20000) break;
-          }
-          await page.waitForLoadState('networkidle', { timeout: 10000 });
-        } catch (e) {
-          log.warning('Scroll/Wait failed, proceeding with what we have');
-        }
+      const crawler = new PlaywrightCrawler({
+        headless: true,
+        navigationTimeoutSecs: 60,
+        requestHandler: async ({ page, log }) => {
+          log.info(`Processing ${page.url()}`);
 
-        const products = await page.evaluate(() => {
-          const items: any[] = [];
+          try {
+            // Wait for content to load
+            await page.waitForLoadState('domcontentloaded');
+            await page.waitForTimeout(3000); // Give JS time to render
 
-          // Strategy: Find all images that are likely book covers
-          const images = Array.from(document.querySelectorAll('img'));
-
-          for (const img of images) {
-            // Filter out small icons/logos
-            if (img.width < 50 || img.height < 50) continue;
-
-            // Traverse up to find a container that might be the product card
-            let container = img.parentElement;
-            let foundPrice: string | null = null;
-            let foundTitle: string | null = null;
-            let foundLink: string | null = null;
-            let foundAuthor: string | null = null;
-
-            // Look up to 5 levels up
+            // Auto-scroll to trigger lazy loading
             for (let i = 0; i < 5; i++) {
-              if (!container) break;
+              await page.evaluate('window.scrollTo(0, document.body.scrollHeight)');
+              await page.waitForTimeout(1000);
+            }
 
-              const text = container.innerText || '';
-              const priceMatch = text.match(/([£$€]\d+(\.\d{2})?)/);
+            // Wait for images to load
+            await page.waitForLoadState('networkidle', { timeout: 15000 }).catch(() => { });
+          } catch (e) {
+            log.warning('Page load/scroll issue, proceeding anyway');
+          }
 
-              if (priceMatch && !foundPrice) {
-                foundPrice = priceMatch[0];
-              }
+          // Debug: Log what we find
+          const debugInfo = await page.evaluate(() => {
+            return {
+              title: document.title,
+              allLinks: document.querySelectorAll('a').length,
+              allImages: document.querySelectorAll('img').length,
+              productLinks: document.querySelectorAll('a[href*="/products/"]').length,
+              hasPrice: (document.body.textContent || '').includes('£'),
+            };
+          });
+          log.info(`Page debug: ${JSON.stringify(debugInfo)}`);
 
-              // Check for link
-              if (container.tagName === 'A') {
-                foundLink = (container as HTMLAnchorElement).href;
-              } else {
-                const link = container.querySelector('a');
-                if (link) foundLink = link.href;
-              }
+          const products = await page.evaluate(() => {
+            const items: any[] = [];
+            const seenUrls = new Set<string>();
 
-              // Try to find title (usually typically H3, H4 or text that isn't price)
-              // Just use the link title or alt text for now as fallback
-              if (foundLink) {
-                // Check if container has enough text
-                const lines = text.split('\n').filter(l => l.trim().length > 0);
-                if (lines.length > 0) {
-                  // Heuristic: Title is typically first line, Author is often second line if it starts with "by" or "By"
-                  // Or sometimes just the second line if it looks like a name
+            // Strategy 1: Look for World of Books specific product cards first
+            const productSelectors = [
+              '.main-product-card',  // World of Books specific!
+              '.grid__item',         // World of Books grid items
+              '[data-product]',
+              '.product-card',
+              '.product-item',
+              '.product',
+              'article',
+            ];
 
-                  foundTitle = lines.find(l => l.length > 5 && !l.includes('£') && !l.includes('Add to')) || null;
-
-                  // Try to find author
-                  const authorLine = lines.find(l => l.toLowerCase().startsWith('by ') || l.match(/^[A-Z][a-z]+ [A-Z][a-z]+$/));
-                  if (authorLine) {
-                    foundAuthor = authorLine.replace(/^by /i, '').trim();
-                  }
-                }
-              }
-
-              if (foundPrice && foundLink) {
+            let productElements: Element[] = [];
+            for (const selector of productSelectors) {
+              const found = document.querySelectorAll(selector);
+              if (found.length > 3) {
+                productElements = Array.from(found);
                 break;
               }
-
-              container = container.parentElement;
             }
 
-            if (foundPrice && foundLink && !items.find(x => x.sourceUrl === foundLink)) {
-              items.push({
-                title: foundTitle || img.alt || 'Unknown Book',
-                price: foundPrice,
-                imageUrl: img.src,
-                sourceUrl: foundLink,
-                sourceId: foundLink.split('/').filter(x => x).pop() || 'unknown-' + Math.random(),
-                author: foundAuthor || ''
+            // Strategy 2: If no product containers, find all links with product URLs
+            if (productElements.length === 0) {
+              const links = document.querySelectorAll('a[href*="/products/"]');
+              productElements = Array.from(links);
+            }
+
+            // Strategy 3: Find all cards that contain both image and price
+            if (productElements.length === 0) {
+              const allDivs = document.querySelectorAll('div, article, li');
+              productElements = Array.from(allDivs).filter(div => {
+                const hasImg = div.querySelector('img');
+                const hasPrice = (div.textContent || '').match(/[£$€]\d/);
+                const hasLink = div.querySelector('a');
+                return hasImg && hasPrice && hasLink;
               });
             }
-          }
 
-          return items;
-        });
+            // Process found product containers
+            for (const el of productElements) {
+              try {
+                const img = el.querySelector('img');
 
-        log.info(`Found ${products.length} products`);
-        await Dataset.pushData({ type: 'products', data: products });
-      },
-      maxRequestsPerCrawl: 5,
-    });
+                // World of Books uses .product-card anchor for title and URL
+                const productCardLink = el.querySelector('a.product-card') as HTMLAnchorElement;
+                const link = productCardLink || el.querySelector('a[href*="/products/"]') || el.querySelector('a') as HTMLAnchorElement;
 
-    await crawler.run([category.url]);
+                if (!link) continue;
 
-    const dataset = await Dataset.open();
-    const { items } = await dataset.getData();
+                const href = link.href;
+                if (!href || seenUrls.has(href)) continue;
+                if (!href.includes('/products/')) continue; // Only product links
+                seenUrls.add(href);
 
-    let count = 0;
-    for (const item of items) {
-      if (item.type === 'products') {
-        for (const p of (item.data as any[])) {
-          // Ensure valid sourceId and title
-          if (p && p.title && p.sourceUrl && p.sourceId && p.sourceId.trim() !== '') {
-            try {
-              await this.productsService.upsert({
-                title: p.title,
-                price: p.price,
-                sourceUrl: p.sourceUrl,
-                imageUrl: p.imageUrl,
-                author: p.author,
-                lastScrapedAt: new Date(),
-                categorySlug: categorySlug,
-              });
-              count++;
-            } catch (e) {
-              this.logger.warn(`Failed to upsert product ${p.title}: ${e.message}`);
+                // Get title - from .product-card link text, or fallback
+                let title = '';
+                if (productCardLink) {
+                  title = productCardLink.innerText?.trim() || '';
+                }
+                if (!title) {
+                  const titleEl = el.querySelector('h2, h3, h4, [class*="title"], [class*="name"]');
+                  title = titleEl?.textContent?.trim() || '';
+                }
+                if (!title && img?.alt) {
+                  title = img.alt;
+                }
+
+                title = title.split('\n')[0].trim();
+                if (!title || title.length < 3) continue;
+
+                if (title.toLowerCase().includes('add to') ||
+                  title.toLowerCase().includes('view all') ||
+                  title.toLowerCase().includes('basket') ||
+                  title.toLowerCase().includes('cart')) continue;
+
+                // World of Books uses .author class
+                const authorEl = el.querySelector('.author, .truncate-author, [class*="author"]');
+                const author = authorEl?.textContent?.trim() || '';
+
+                // World of Books uses .price-item class
+                const priceEl = el.querySelector('.price-item, .price-item--sale, .price-item--regular');
+                let price = priceEl?.textContent?.trim() || '';
+                if (!price) {
+                  // Fallback: find price in text
+                  const text = el.textContent || '';
+                  const priceMatch = text.match(/([£$€]\s?\d+(?:\.\d{2})?)/);
+                  price = priceMatch ? priceMatch[0] : '£0.00';
+                }
+
+                items.push({
+                  title: title,
+                  price: price.replace(/\s/g, ''),
+                  imageUrl: img?.src || '',
+                  sourceUrl: href,
+                  sourceId: href.split('/').filter(x => x).pop() || `id-${Math.random().toString(36).substr(2, 9)}`,
+                  author: author
+                });
+              } catch (e) {
+                // Skip
+              }
+            }
+
+            // Strategy 4 (ULTIMATE FALLBACK): Find ALL anchor tags that have an image inside
+            if (items.length === 0) {
+              const allAnchors = document.querySelectorAll('a');
+              for (const a of allAnchors) {
+                const href = (a as HTMLAnchorElement).href;
+                if (!href.includes('/products/') && !href.includes('/collections/')) continue;
+                if (href.includes('/cart') || href.includes('/account')) continue;
+                if (seenUrls.has(href)) continue;
+
+                const img = a.querySelector('img');
+                if (!img) continue;
+
+                const title = img.alt || a.textContent?.trim() || '';
+                if (!title || title.length < 5) continue;
+
+                seenUrls.add(href);
+                items.push({
+                  title: title.split('\n')[0].trim().substring(0, 100),
+                  price: '£0.00', // Price not found, placeholder
+                  imageUrl: img.src,
+                  sourceUrl: href,
+                  sourceId: href.split('/').filter(x => x).pop() || `id-${Math.random().toString(36).substr(2, 9)}`,
+                  author: ''
+                });
+              }
+            }
+
+            return items;
+          });
+
+          log.info(`Found ${products.length} products`);
+          await Dataset.pushData({ type: 'products', data: products });
+        },
+        maxRequestsPerCrawl: 5,
+      });
+
+      await crawler.run([category.url]);
+
+      const dataset = await Dataset.open();
+      const { items } = await dataset.getData();
+
+      let count = 0;
+      for (const item of items) {
+        if (item.type === 'products') {
+          for (const p of (item.data as any[])) {
+            // Only require title and sourceUrl - generate sourceId if missing
+            if (p && p.title && p.sourceUrl) {
+              try {
+                // Generate sourceId from URL if not present
+                const sourceId = p.sourceId || p.sourceUrl.split('/').filter((x: string) => x).pop() || `gen-${Date.now()}`;
+
+                await this.productsService.upsert({
+                  title: p.title,
+                  price: p.price || '£0.00',
+                  sourceUrl: p.sourceUrl,
+                  imageUrl: p.imageUrl || '',
+                  author: p.author || '',
+                  lastScrapedAt: new Date(),
+                  categorySlug: categorySlug,
+                });
+                count++;
+              } catch (e) {
+                this.logger.warn(`Failed to upsert product ${p.title}: ${e.message}`);
+              }
             }
           }
         }
       }
+
+      // IMPORTANT: Clear dataset after each scrape to prevent data mixing
+      await dataset.drop();
+
+      this.logger.log(`Product scrape finished. Upserted ${count} products for ${categorySlug}.`);
+      return { success: true, count };
+    } catch (error) {
+      this.logger.error(`Error scraping products for ${categorySlug}: ${error.message}`);
+      return { success: false, count: 0, error: error.message };
     }
-    this.logger.log(`Product scrape finished. Upserted ${count} products.`);
-    return { success: true, count };
   }
 }

@@ -1,25 +1,52 @@
 {
   "requestsFinished": 0,
-  "requestsFailed": 0,
-  "requestsRetries": 0,
-  "requestsFailedPerMinute": 0,
+  "requestsFailed": 1,
+  "requestsRetries": 1,
+  "requestsFailedPerMinute": 1,
   "requestsFinishedPerMinute": 0,
   "requestMinDurationMillis": null,
   "requestMaxDurationMillis": 0,
-  "requestTotalFailedDurationMillis": 0,
+  "requestTotalFailedDurationMillis": 15472,
   "requestTotalFinishedDurationMillis": 0,
-  "crawlerStartedAt": "2026-01-09T07:44:32.435Z",
-  "crawlerFinishedAt": "2026-01-09T07:44:33.839Z",
-  "statsPersistedAt": "2026-01-09T07:44:33.839Z",
-  "crawlerRuntimeMillis": 2020,
-  "crawlerLastStartTimestamp": 1767944671819,
-  "requestRetryHistogram": [],
+  "crawlerStartedAt": "2026-01-10T07:47:27.511Z",
+  "crawlerFinishedAt": "2026-01-10T07:48:21.857Z",
+  "statsPersistedAt": "2026-01-10T07:48:21.857Z",
+  "crawlerRuntimeMillis": 54571,
+  "crawlerLastStartTimestamp": 1768031247286,
+  "requestRetryHistogram": [
+    null,
+    null,
+    null,
+    1
+  ],
   "statsId": 4,
-  "requestAvgFailedDurationMillis": null,
+  "requestAvgFailedDurationMillis": 15472,
   "requestAvgFinishedDurationMillis": null,
-  "requestTotalDurationMillis": 0,
-  "requestsTotal": 0,
-  "requestsWithStatusCode": {},
-  "errors": {},
-  "retryErrors": {}
+  "requestTotalDurationMillis": 15472,
+  "requestsTotal": 1,
+  "requestsWithStatusCode": {
+    "200": 4
+  },
+  "errors": {
+    "C:\\Users\\aradh\\Desktop\\Assignment\\backend\\src\\scraping\\scraping.service.ts:279:11": {
+      "missing error code": {
+        "Error": {
+          "Dataset with id: beeacd0a-1787-4855-bdce-bdb35063b0fc does not exist.": {
+            "count": 1
+          }
+        }
+      }
+    }
+  },
+  "retryErrors": {
+    "C:\\Users\\aradh\\Desktop\\Assignment\\backend\\src\\scraping\\scraping.service.ts:279:11": {
+      "missing error code": {
+        "Error": {
+          "Dataset with id: beeacd0a-1787-4855-bdce-bdb35063b0fc does not exist.": {
+            "count": 3
+          }
+        }
+      }
+    }
+  }
 }

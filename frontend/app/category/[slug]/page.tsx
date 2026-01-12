@@ -17,10 +17,14 @@ export default async function CategoryPage({ params }: { params: Promise<{ slug:
 
     // Fetch products
     let products: Product[] = [];
+    let total = 0;
     try {
-        products = await fetchProducts(slug);
+        const result = await fetchProducts(slug);
+        products = result.products || [];
+        total = result.total || 0;
     } catch (e) {
-        console.error(e);
+        console.error('Error fetching products:', e);
+        products = [];
     }
 
     return (
@@ -31,6 +35,7 @@ export default async function CategoryPage({ params }: { params: Promise<{ slug:
                     <div>
                         <Link href="/" className="text-sm text-gray-500 hover:text-white mb-2 block">← Back to Categories</Link>
                         <h1 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-white capitalize">{slug.replace(/-/g, ' ')}</h1>
+                        {total > 0 && <p className="text-sm text-gray-500 mt-1">{total} books found</p>}
                     </div>
                     <ScrapeProductsButton slug={slug} />
                 </div>

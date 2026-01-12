@@ -1,0 +1,9 @@
+{
+	"id": "9ubAmFckgGssMKA",
+	"json": "{\"id\":\"9ubAmFckgGssMKA\",\"url\":\"https://www.worldofbooks.com/en-gb/collections/cookbooks-and-recipe-books\",\"loadedUrl\":\"https://www.worldofbooks.com/en-gb/collections/cookbooks-and-recipe-books\",\"uniqueKey\":\"https://www.worldofbooks.com/en-gb/collections/cookbooks-and-recipe-books\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"state\":4}},\"handledAt\":\"2026-01-10T07:41:04.270Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.worldofbooks.com/en-gb/collections/cookbooks-and-recipe-books",
+	"url": "https://www.worldofbooks.com/en-gb/collections/cookbooks-and-recipe-books"
+}

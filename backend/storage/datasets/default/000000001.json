@@ -2,68 +2,324 @@
 	"type": "products",
 	"data": [
 		{
-			"title": "World of Books eGift Card",
-			"price": "£5.00",
-			"imageUrl": "https://www.worldofbooks.com/cdn/shop/files/Frame_1171276012_7879b476-3c77-4885-bf20-015cc056e273.png?v=1763725694&width=3200",
-			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/gift-card",
-			"sourceId": "gift-card",
-			"author": ""
+			"title": "Information is Beautiful (New Edition)",
+			"price": "£3.60",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9780007492893.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/information-is-beautiful-new-edition-book-david-mccandless-9780007492893",
+			"sourceId": "information-is-beautiful-new-edition-book-david-mccandless-9780007492893",
+			"author": "David Mccandless"
 		},
 		{
-			"title": "Christmas eGift Card",
-			"price": "£5.00",
-			"imageUrl": "https://www.worldofbooks.com/cdn/shop/files/Frame_1171276018.png?v=1762342513&width=3200",
-			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/gift-card-2",
-			"sourceId": "gift-card-2",
-			"author": ""
+			"title": "How to Do Just About Anything",
+			"price": "£4.50",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9780276419935.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/how-to-do-just-about-anything-book-reader-s-digest-9780276419935",
+			"sourceId": "how-to-do-just-about-anything-book-reader-s-digest-9780276419935",
+			"author": "Reader's Digest"
 		},
 		{
-			"title": "Christmas eGift Card",
-			"price": "£5.00",
-			"imageUrl": "https://www.worldofbooks.com/cdn/shop/files/Frame_1171276017.png?v=1762342267&width=3200",
-			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/gift-card-4",
-			"sourceId": "gift-card-4",
-			"author": ""
+			"title": "The Bumper Book of Things That Nobody Knows",
+			"price": "£3.60",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9781786490742.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/bumper-book-of-things-that-nobody-knows-book-william-hartston-9781786490742",
+			"sourceId": "bumper-book-of-things-that-nobody-knows-book-william-hartston-9781786490742",
+			"author": "William Hartston"
 		},
 		{
-			"title": "Sustainability eGift card",
-			"price": "£5.00",
-			"imageUrl": "https://www.worldofbooks.com/cdn/shop/files/Frame_1171276021_9c99f1c3-b01c-4f40-afa2-0b462af6b498.png?v=1762342767&width=3200",
-			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/gift-card-3",
-			"sourceId": "gift-card-3",
-			"author": ""
+			"title": "Encyclopedia of Scotland",
+			"price": "£6.50",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9780002550826.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/encyclopedia-of-scotland-book-john-keay-9780002550826",
+			"sourceId": "encyclopedia-of-scotland-book-john-keay-9780002550826",
+			"author": "John Keay"
 		},
 		{
-			"title": "Birthday eGift Card",
-			"price": "£5.00",
-			"imageUrl": "https://www.worldofbooks.com/cdn/shop/files/Frame_1171276013.png?v=1762342094&width=3200",
-			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/gift-card-5",
-			"sourceId": "gift-card-5",
-			"author": ""
+			"title": "Worth Dying For",
+			"price": "£3.60",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9781783963034.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/worth-dying-for-book-tim-marshall-9781783963034",
+			"sourceId": "worth-dying-for-book-tim-marshall-9781783963034",
+			"author": "Tim Marshall"
 		},
 		{
-			"title": "Children’s eGift Card",
-			"price": "£5.00",
-			"imageUrl": "https://www.worldofbooks.com/cdn/shop/files/Frame_1171276020_91715ef1-fc2f-43c6-b4c0-47c43277fb5b.png?v=1762342850&width=3200",
-			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/gift-card-6",
-			"sourceId": "gift-card-6",
-			"author": ""
+			"title": "Brilliant Maps",
+			"price": "£11.30",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9781846276637.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/brilliant-maps-book-ian-wright-9781846276637",
+			"sourceId": "brilliant-maps-book-ian-wright-9781846276637",
+			"author": "Ian Wright"
 		},
 		{
-			"title": "Congrats eGift Card",
-			"price": "£5.00",
-			"imageUrl": "https://www.worldofbooks.com/cdn/shop/files/Congratulations_Landscape.png?v=1765892384&width=3200",
-			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/gift-card-8",
-			"sourceId": "gift-card-8",
-			"author": ""
+			"title": "The London Encyclopaedia (3rd Edition)",
+			"price": "£3.70",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9781405049245.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/london-encyclopaedia-3rd-edition-book-christopher-hibbert-9781405049245",
+			"sourceId": "london-encyclopaedia-3rd-edition-book-christopher-hibbert-9781405049245",
+			"author": "Christopher Hibbert"
 		},
 		{
-			"title": "Gift of Reading eGift Card",
+			"title": "Collins World Atlas: Paperback Edition",
+			"price": "£6.89",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9780008320416.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/collins-world-atlas-paperback-edition-book-collins-maps-9780008320416",
+			"sourceId": "collins-world-atlas-paperback-edition-book-collins-maps-9780008320416",
+			"author": "Collins Maps"
+		},
+		{
+			"title": "Knowledge is Beautiful",
+			"price": "£10.20",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9780007427925.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/knowledge-is-beautiful-book-david-mccandless-9780007427925",
+			"sourceId": "knowledge-is-beautiful-book-david-mccandless-9780007427925",
+			"author": "David Mccandless"
+		},
+		{
+			"title": "I Before E (Except After C)",
+			"price": "£3.00",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9781843176589.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/i-before-e-except-after-c-book-judy-parkinson-9781843176589",
+			"sourceId": "i-before-e-except-after-c-book-judy-parkinson-9781843176589",
+			"author": "Judy Parkinson"
+		},
+		{
+			"title": "Just My Type",
+			"price": "£3.60",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9781846683022.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/just-my-type-book-simon-garfield-9781846683022",
+			"sourceId": "just-my-type-book-simon-garfield-9781846683022",
+			"author": "Simon Garfield"
+		},
+		{
+			"title": "Flora Britannica",
+			"price": "£7.00",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9781856193771.jpg?updatedAt=1767094628247",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/flora-britannica-book-richard-mabey-9781856193771",
+			"sourceId": "flora-britannica-book-richard-mabey-9781856193771",
+			"author": "Richard Mabey"
+		},
+		{
+			"title": "She Believed She Could So She Did",
+			"price": "£3.80",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9781786854889.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/she-believed-she-could-so-she-did-book-summersdale-publishers-9781786854889",
+			"sourceId": "she-believed-she-could-so-she-did-book-summersdale-publishers-9781786854889",
+			"author": "Summersdale Publishers"
+		},
+		{
+			"title": "The Periodic Table of Marvel",
+			"price": "£3.50",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9780241500835.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/periodic-table-of-marvel-book-melanie-scott-9780241500835",
+			"sourceId": "periodic-table-of-marvel-book-melanie-scott-9780241500835",
+			"author": "Melanie Scott"
+		},
+		{
+			"title": "Uncommon Knowledge",
 			"price": "£5.00",
-			"imageUrl": "https://www.worldofbooks.com/cdn/shop/files/Gift_of_Reading_Landscape.png?v=1765892281&width=3200",
-			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/gift-card-7",
-			"sourceId": "gift-card-7",
-			"author": ""
+			"imageUrl": "https://image-server.worldofbooks.com/images/9781788163323.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/uncommon-knowledge-book-tom-standage-9781788163323",
+			"sourceId": "uncommon-knowledge-book-tom-standage-9781788163323",
+			"author": "Tom Standage"
+		},
+		{
+			"title": "The Unbelievable Facts Book",
+			"price": "£4.70",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9798758222782.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/unbelievable-facts-book-book-henry-bennett-9798758222782",
+			"sourceId": "unbelievable-facts-book-book-henry-bennett-9798758222782",
+			"author": "Henry Bennett"
+		},
+		{
+			"title": "50 Codes that Changed the World",
+			"price": "£3.90",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9781472297242.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/50-codes-that-changed-the-world-book-sinclair-mckay-9781472297242",
+			"sourceId": "50-codes-that-changed-the-world-book-sinclair-mckay-9781472297242",
+			"author": "Sinclair Mckay"
+		},
+		{
+			"title": "Self-Care for Every Day",
+			"price": "£5.60",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9781800076747.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/self-care-for-every-day-book-summersdale-publishers-9781800076747",
+			"sourceId": "self-care-for-every-day-book-summersdale-publishers-9781800076747",
+			"author": "Summersdale Publishers"
+		},
+		{
+			"title": "Guinness World Records 2025",
+			"price": "£3.30",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9781913484552.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/guinness-world-records-2025-book-records-guinness-world-9781913484552",
+			"sourceId": "guinness-world-records-2025-book-records-guinness-world-9781913484552",
+			"author": "Records Guinness World"
+		},
+		{
+			"title": "Golf It's a Funny Old Game",
+			"price": "£3.50",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9781543284973.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/golf-it-s-a-funny-old-game-book-m-prefontaine-9781543284973",
+			"sourceId": "golf-it-s-a-funny-old-game-book-m-prefontaine-9781543284973",
+			"author": "M Prefontaine"
+		},
+		{
+			"title": "The Gardener's Almanac",
+			"price": "£3.90",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9781529389418.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/gardener-s-almanac-book-alan-titchmarsh-9781529389418",
+			"sourceId": "gardener-s-almanac-book-alan-titchmarsh-9781529389418",
+			"author": "Alan Titchmarsh"
+		},
+		{
+			"title": "Guinness World Records 2026",
+			"price": "£15.40",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9781913484811.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/guinness-world-records-2026-book-guinness-world-records-9781913484811",
+			"sourceId": "guinness-world-records-2026-book-guinness-world-records-9781913484811",
+			"author": "Guinness World Records"
+		},
+		{
+			"title": "The Friendship Book 2026",
+			"price": "£8.40",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9781917203968.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/friendship-book-2026-book-the-people-s-friend-9781917203968",
+			"sourceId": "friendship-book-2026-book-the-people-s-friend-9781917203968",
+			"author": "The People's Friend"
+		},
+		{
+			"title": "The People's Friend Annual 2026",
+			"price": "£9.00",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9781917203951.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/people-s-friend-annual-2026-book-the-people-s-friend-9781917203951",
+			"sourceId": "people-s-friend-annual-2026-book-the-people-s-friend-9781917203951",
+			"author": "The People's Friend"
+		},
+		{
+			"title": "Thinking in Systems",
+			"price": "£12.10",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9781603580557.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/thinking-in-systems-book-donella-meadows-9781603580557",
+			"sourceId": "thinking-in-systems-book-donella-meadows-9781603580557",
+			"author": "Donella Meadows"
+		},
+		{
+			"title": "Beano & Dandy Gift Book 2026",
+			"price": "£11.20",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9781917203937.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/beano-dandy-gift-book-2026-book-beano-9781917203937",
+			"sourceId": "beano-dandy-gift-book-2026-book-beano-9781917203937",
+			"author": "Beano"
+		},
+		{
+			"title": "The Black Swan",
+			"price": "£4.00",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9780141034591.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/black-swan-book-nassim-nicholas-taleb-9780141034591",
+			"sourceId": "black-swan-book-nassim-nicholas-taleb-9780141034591",
+			"author": "Nassim Nicholas Taleb"
+		},
+		{
+			"title": "The Little Book for Plant Parents",
+			"price": "£4.50",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9781787836877.jpg?updatedAt=1766142746908",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/little-book-for-plant-parents-book-felicity-hart-9781787836877",
+			"sourceId": "little-book-for-plant-parents-book-felicity-hart-9781787836877",
+			"author": "Felicity Hart"
+		},
+		{
+			"title": "Official Yours Yearbook 2025",
+			"price": "£3.50",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9781915879974.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/official-yours-yearbook-2025-book-grange-9781915879974",
+			"sourceId": "official-yours-yearbook-2025-book-grange-9781915879974",
+			"author": "Grange"
+		},
+		{
+			"title": "Reading Log",
+			"price": "£5.80",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9781695365629.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/reading-log-book-smart-bookx-9781695365629",
+			"sourceId": "reading-log-book-smart-bookx-9781695365629",
+			"author": "Smart Bookx"
+		},
+		{
+			"title": "Believe and Achieve",
+			"price": "£5.00",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9781800073920.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/believe-and-achieve-book-summersdale-publishers-9781800073920",
+			"sourceId": "believe-and-achieve-book-summersdale-publishers-9781800073920",
+			"author": "Summersdale Publishers"
+		},
+		{
+			"title": "The Only Academic Phrasebook You'Ll Ever Need",
+			"price": "£7.50",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9781539527756.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/only-academic-phrasebook-you-ll-ever-need-book-luis-otavio-barros-9781539527756",
+			"sourceId": "only-academic-phrasebook-you-ll-ever-need-book-luis-otavio-barros-9781539527756",
+			"author": "Luis Otavio Barros"
+		},
+		{
+			"title": "The People's Friend Annual 2025",
+			"price": "£3.50",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9781845359973.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/people-s-friend-annual-2025-book-the-people-s-friend-annual-and-9781845359973",
+			"sourceId": "people-s-friend-annual-2025-book-the-people-s-friend-annual-and-9781845359973",
+			"author": "The People's Friend Annual And Dc Thomson"
+		},
+		{
+			"title": "Flags, Capitals and Countries of the World",
+			"price": "£5.30",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9781700093035.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/flags-capitals-and-countries-of-the-world-book-wanderlust-press-9781700093035",
+			"sourceId": "flags-capitals-and-countries-of-the-world-book-wanderlust-press-9781700093035",
+			"author": "Wanderlust Press"
+		},
+		{
+			"title": "You Got This",
+			"price": "£5.60",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9781800073913.jpg?updatedAt=1766141731801",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/you-got-this-book-summersdale-publishers-9781800073913",
+			"sourceId": "you-got-this-book-summersdale-publishers-9781800073913",
+			"author": "Summersdale Publishers"
+		},
+		{
+			"title": "Skin in the Game",
+			"price": "£8.60",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9780141982656.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/skin-in-the-game-book-nassim-nicholas-taleb-9780141982656",
+			"sourceId": "skin-in-the-game-book-nassim-nicholas-taleb-9780141982656",
+			"author": "Nassim Nicholas Taleb"
+		},
+		{
+			"title": "Guinness World Records 2024",
+			"price": "£3.50",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9781913484385.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/guinness-world-records-2024-book-records-guinness-world-9781913484385",
+			"sourceId": "guinness-world-records-2024-book-records-guinness-world-9781913484385",
+			"author": "Records Guinness World"
+		},
+		{
+			"title": "The Almanac",
+			"price": "£3.50",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9781856754705.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/the-almanac-book-lia-leendertz-9781856754705",
+			"sourceId": "the-almanac-book-lia-leendertz-9781856754705",
+			"author": "Lia Leendertz"
+		},
+		{
+			"title": "Successful Qualitative Research",
+			"price": "£14.00",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9781847875822.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/successful-qualitative-research-book-virginia-braun-9781847875822",
+			"sourceId": "successful-qualitative-research-book-virginia-braun-9781847875822",
+			"author": "Virginia Braun"
+		},
+		{
+			"title": "The Sacred Symbols Oracle",
+			"price": "£13.30",
+			"imageUrl": "https://image-server.worldofbooks.com/images/9781454948568.jpg",
+			"sourceUrl": "https://www.worldofbooks.com/en-gb/products/sacred-symbols-oracle-book-marcella-kroll-9781454948568",
+			"sourceId": "sacred-symbols-oracle-book-marcella-kroll-9781454948568",
+			"author": "Marcella Kroll"
 		}
 	]
 }

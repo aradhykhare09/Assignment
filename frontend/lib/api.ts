@@ -1,20 +1,43 @@
 const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3000';
 
-export async function fetchCategories() {
-    console.log('Fetching categories from:', `${API_BASE_URL}/categories`);
+export interface Category {
+    _id: string;
+    title: string;
+    slug: string;
+    url: string;
+    productCount?: number;
+}
+
+export interface Product {
+    _id: string;
+    title: string;
+    price: string;
+    author?: string;
+    imageUrl?: string;
+    sourceUrl: string;
+    categorySlug?: string;
+}
+
+export interface PaginatedProducts {
+    products: Product[];
+    total: number;
+    page: number;
+    totalPages: number;
+}
+
+export async function fetchCategories(): Promise<Category[]> {
     try {
         const res = await fetch(`${API_BASE_URL}/categories`, {
-            next: { revalidate: 0 }, // Disable cache to see live data
+            cache: 'no-store',
         });
 
         if (!res.ok) {
-            console.error('Fetch failed:', res.status, res.statusText);
-            throw new Error('Failed to fetch categories');
+            console.error('Fetch categories failed:', res.status);
+            return [];
         }
 
         const data = await res.json();
-        console.log('Categories fetched:', data.length);
-        return data;
+        return Array.isArray(data) ? data : [];
     } catch (error) {
         console.error('Error fetching categories:', error);
         return [];
@@ -29,20 +52,41 @@ export async function scrapeCategories() {
     return res.json();
 }
 
-export async function fetchProducts(categorySlug?: string) {
-    let url = `${API_BASE_URL}/products`;
-    if (categorySlug) {
-        url += `?category=${categorySlug}`;
+export async function fetchProducts(categorySlug?: string, page: number = 1, limit: number = 50, search?: string): Promise<PaginatedProducts> {
+    try {
+        const params = new URLSearchParams();
+        if (categorySlug) params.append('category', categorySlug);
+        if (search) params.append('search', search);
+        params.append('page', page.toString());
+        params.append('limit', limit.toString());
+
+        const url = `${API_BASE_URL}/products?${params.toString()}`;
+        const res = await fetch(url, { cache: 'no-store' });
+
+        if (!res.ok) {
+            return { products: [], total: 0, page: 1, totalPages: 0 };
+        }
+
+        return res.json();
+    } catch (error) {
+        console.error('Error fetching products:', error);
+        return { products: [], total: 0, page: 1, totalPages: 0 };
     }
-    const res = await fetch(url, { cache: 'no-store' }); // Always fetch fresh data for now
-    if (!res.ok) throw new Error('Failed to fetch products');
-    return res.json();
 }
 
 export async function scrapeProducts(categorySlug: string) {
-    const res = await fetch(`${API_BASE_URL}/scraping/products/${categorySlug}`, {
-        method: 'POST',
-    });
-    if (!res.ok) throw new Error('Failed to scrape products');
-    return res.json();
+    try {
+        const res = await fetch(`${API_BASE_URL}/scraping/products/${categorySlug}`, {
+            method: 'POST',
+        });
+        if (!res.ok) {
+            const errorText = await res.text();
+            console.error('Scrape products failed:', res.status, errorText);
+            throw new Error(`Failed to scrape: ${res.status}`);
+        }
+        return res.json();
+    } catch (error) {
+        console.error('Scrape products error:', error);
+        throw error;
+    }
 }
